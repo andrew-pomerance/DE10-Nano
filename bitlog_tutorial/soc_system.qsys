@@ -56,6 +56,14 @@
          type = "boolean";
       }
    }
+   element custom_leds_0.avs_s0
+   {
+      datum baseAddress
+      {
+         value = "262144";
+         type = "String";
+      }
+   }
    element f2sdram_only_master
    {
       datum _sortIndex
@@ -856,7 +864,7 @@
   <parameter name="PIPELINE_COMMAND" value="1" />
   <parameter name="PIPELINE_RESPONSE" value="1" />
   <parameter name="SYMBOL_WIDTH" value="8" />
-  <parameter name="SYSINFO_ADDR_WIDTH" value="18" />
+  <parameter name="SYSINFO_ADDR_WIDTH" value="19" />
   <parameter name="USE_AUTO_ADDRESS_WIDTH" value="1" />
   <parameter name="USE_RESPONSE" value="0" />
  </module>
@@ -900,7 +908,7 @@
    start="mm_bridge_0.m0"
    end="custom_leds_0.avs_s0">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="baseAddress" value="0x00040000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -936,7 +944,7 @@
    start="fpga_only_master.master"
    end="custom_leds_0.avs_s0">
   <parameter name="arbitrationPriority" value="1" />
-  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="baseAddress" value="0x00040000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection

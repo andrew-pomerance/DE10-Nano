@@ -1,6 +1,7 @@
 
 module soc_system (
 	clk_clk,
+	custom_leds_0_leds_new_signal,
 	hps_0_f2h_cold_reset_req_reset_n,
 	hps_0_f2h_debug_reset_req_reset_n,
 	hps_0_f2h_stm_hw_events_stm_hwevents,
@@ -70,10 +71,10 @@ module soc_system (
 	memory_mem_odt,
 	memory_mem_dm,
 	memory_oct_rzqin,
-	reset_reset_n,
-	custom_leds_0_leds_new_signal);	
+	reset_reset_n);	
 
 	input		clk_clk;
+	input	[7:0]	custom_leds_0_leds_new_signal;
 	input		hps_0_f2h_cold_reset_req_reset_n;
 	input		hps_0_f2h_debug_reset_req_reset_n;
 	input	[27:0]	hps_0_f2h_stm_hw_events_stm_hwevents;
@@ -144,5 +145,4 @@ module soc_system (
 	output	[3:0]	memory_mem_dm;
 	input		memory_oct_rzqin;
 	input		reset_reset_n;
-	input	[7:0]	custom_leds_0_leds_new_signal;
 endmodule

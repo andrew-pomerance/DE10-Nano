@@ -1,6 +1,7 @@
 	component soc_system is
 		port (
 			clk_clk                               : in    std_logic                     := 'X';             -- clk
+			custom_leds_0_leds_new_signal         : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- new_signal
 			hps_0_f2h_cold_reset_req_reset_n      : in    std_logic                     := 'X';             -- reset_n
 			hps_0_f2h_debug_reset_req_reset_n     : in    std_logic                     := 'X';             -- reset_n
 			hps_0_f2h_stm_hw_events_stm_hwevents  : in    std_logic_vector(27 downto 0) := (others => 'X'); -- stm_hwevents
@@ -70,14 +71,14 @@
 			memory_mem_odt                        : out   std_logic;                                        -- mem_odt
 			memory_mem_dm                         : out   std_logic_vector(3 downto 0);                     -- mem_dm
 			memory_oct_rzqin                      : in    std_logic                     := 'X';             -- oct_rzqin
-			reset_reset_n                         : in    std_logic                     := 'X';             -- reset_n
-			custom_leds_0_leds_new_signal         : in    std_logic_vector(7 downto 0)  := (others => 'X')  -- new_signal
+			reset_reset_n                         : in    std_logic                     := 'X'              -- reset_n
 		);
 	end component soc_system;
 
 	u0 : component soc_system
 		port map (
 			clk_clk                               => CONNECTED_TO_clk_clk,                               --                       clk.clk
+			custom_leds_0_leds_new_signal         => CONNECTED_TO_custom_leds_0_leds_new_signal,         --        custom_leds_0_leds.new_signal
 			hps_0_f2h_cold_reset_req_reset_n      => CONNECTED_TO_hps_0_f2h_cold_reset_req_reset_n,      --  hps_0_f2h_cold_reset_req.reset_n
 			hps_0_f2h_debug_reset_req_reset_n     => CONNECTED_TO_hps_0_f2h_debug_reset_req_reset_n,     -- hps_0_f2h_debug_reset_req.reset_n
 			hps_0_f2h_stm_hw_events_stm_hwevents  => CONNECTED_TO_hps_0_f2h_stm_hw_events_stm_hwevents,  --   hps_0_f2h_stm_hw_events.stm_hwevents
@@ -147,7 +148,6 @@
 			memory_mem_odt                        => CONNECTED_TO_memory_mem_odt,                        --                          .mem_odt
 			memory_mem_dm                         => CONNECTED_TO_memory_mem_dm,                         --                          .mem_dm
 			memory_oct_rzqin                      => CONNECTED_TO_memory_oct_rzqin,                      --                          .oct_rzqin
-			reset_reset_n                         => CONNECTED_TO_reset_reset_n,                         --                     reset.reset_n
-			custom_leds_0_leds_new_signal         => CONNECTED_TO_custom_leds_0_leds_new_signal          --        custom_leds_0_leds.new_signal
+			reset_reset_n                         => CONNECTED_TO_reset_reset_n                          --                     reset.reset_n
 		);
 

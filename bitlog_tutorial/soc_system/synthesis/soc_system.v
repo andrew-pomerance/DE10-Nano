@@ -117,7 +117,7 @@ module soc_system (
 	wire   [31:0] mm_interconnect_0_mm_bridge_0_s0_readdata;                 // mm_bridge_0:s0_readdata -> mm_interconnect_0:mm_bridge_0_s0_readdata
 	wire          mm_interconnect_0_mm_bridge_0_s0_waitrequest;              // mm_bridge_0:s0_waitrequest -> mm_interconnect_0:mm_bridge_0_s0_waitrequest
 	wire          mm_interconnect_0_mm_bridge_0_s0_debugaccess;              // mm_interconnect_0:mm_bridge_0_s0_debugaccess -> mm_bridge_0:s0_debugaccess
-	wire   [17:0] mm_interconnect_0_mm_bridge_0_s0_address;                  // mm_interconnect_0:mm_bridge_0_s0_address -> mm_bridge_0:s0_address
+	wire   [18:0] mm_interconnect_0_mm_bridge_0_s0_address;                  // mm_interconnect_0:mm_bridge_0_s0_address -> mm_bridge_0:s0_address
 	wire          mm_interconnect_0_mm_bridge_0_s0_read;                     // mm_interconnect_0:mm_bridge_0_s0_read -> mm_bridge_0:s0_read
 	wire    [3:0] mm_interconnect_0_mm_bridge_0_s0_byteenable;               // mm_interconnect_0:mm_bridge_0_s0_byteenable -> mm_bridge_0:s0_byteenable
 	wire          mm_interconnect_0_mm_bridge_0_s0_readdatavalid;            // mm_bridge_0:s0_readdatavalid -> mm_interconnect_0:mm_bridge_0_s0_readdatavalid
@@ -127,7 +127,7 @@ module soc_system (
 	wire          mm_bridge_0_m0_waitrequest;                                // mm_interconnect_1:mm_bridge_0_m0_waitrequest -> mm_bridge_0:m0_waitrequest
 	wire   [31:0] mm_bridge_0_m0_readdata;                                   // mm_interconnect_1:mm_bridge_0_m0_readdata -> mm_bridge_0:m0_readdata
 	wire          mm_bridge_0_m0_debugaccess;                                // mm_bridge_0:m0_debugaccess -> mm_interconnect_1:mm_bridge_0_m0_debugaccess
-	wire   [17:0] mm_bridge_0_m0_address;                                    // mm_bridge_0:m0_address -> mm_interconnect_1:mm_bridge_0_m0_address
+	wire   [18:0] mm_bridge_0_m0_address;                                    // mm_bridge_0:m0_address -> mm_interconnect_1:mm_bridge_0_m0_address
 	wire          mm_bridge_0_m0_read;                                       // mm_bridge_0:m0_read -> mm_interconnect_1:mm_bridge_0_m0_read
 	wire    [3:0] mm_bridge_0_m0_byteenable;                                 // mm_bridge_0:m0_byteenable -> mm_interconnect_1:mm_bridge_0_m0_byteenable
 	wire          mm_bridge_0_m0_readdatavalid;                              // mm_interconnect_1:mm_bridge_0_m0_readdatavalid -> mm_bridge_0:m0_readdatavalid
@@ -527,7 +527,7 @@ module soc_system (
 	altera_avalon_mm_bridge #(
 		.DATA_WIDTH        (32),
 		.SYMBOL_WIDTH      (8),
-		.HDL_ADDR_WIDTH    (18),
+		.HDL_ADDR_WIDTH    (19),
 		.BURSTCOUNT_WIDTH  (1),
 		.PIPELINE_COMMAND  (1),
 		.PIPELINE_RESPONSE (1)

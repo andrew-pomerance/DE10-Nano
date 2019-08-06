@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="soc_system" kind="soc_system" version="1.0" fabric="QSYS">
  <!-- Format version 17.0 595 (Future versions may contain additional information.) -->
- <!-- 2019.08.04.13:55:47 -->
+ <!-- 2019.08.06.15:33:05 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1564941346</value>
+  <value>1565119985</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>
@@ -2716,7 +2716,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>custom_leds_0</moduleName>
     <slaveName>avs_s0</slaveName>
     <name>custom_leds_0.avs_s0</name>
-    <baseAddress>0</baseAddress>
+    <baseAddress>262144</baseAddress>
     <span>8</span>
    </memoryBlock>
    <memoryBlock>
@@ -19790,7 +19790,7 @@ parameters are a RESULT of the module parameters. -->
     <slaveName>s0</slaveName>
     <name>mm_bridge_0.s0</name>
     <baseAddress>0</baseAddress>
-    <span>262144</span>
+    <span>524288</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
@@ -19813,7 +19813,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>custom_leds_0</moduleName>
     <slaveName>avs_s0</slaveName>
     <name>custom_leds_0.avs_s0</name>
-    <baseAddress>0</baseAddress>
+    <baseAddress>262144</baseAddress>
     <span>8</span>
    </memoryBlock>
    <memoryBlock>
@@ -46673,7 +46673,7 @@ parameters are a RESULT of the module parameters. -->
     <slaveName>s0</slaveName>
     <name>mm_bridge_0.s0</name>
     <baseAddress>0</baseAddress>
-    <span>262144</span>
+    <span>524288</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
@@ -46696,7 +46696,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>custom_leds_0</moduleName>
     <slaveName>avs_s0</slaveName>
     <name>custom_leds_0.avs_s0</name>
-    <baseAddress>0</baseAddress>
+    <baseAddress>262144</baseAddress>
     <span>8</span>
    </memoryBlock>
    <memoryBlock>
@@ -48682,7 +48682,7 @@ parameters are a RESULT of the module parameters. -->
     <slaveName>s0</slaveName>
     <name>mm_bridge_0.s0</name>
     <baseAddress>4280287232</baseAddress>
-    <span>262144</span>
+    <span>524288</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
@@ -48705,7 +48705,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>custom_leds_0</moduleName>
     <slaveName>avs_s0</slaveName>
     <name>custom_leds_0.avs_s0</name>
-    <baseAddress>4280287232</baseAddress>
+    <baseAddress>4280549376</baseAddress>
     <span>8</span>
    </memoryBlock>
    <memoryBlock>
@@ -49545,7 +49545,7 @@ parameters are a RESULT of the module parameters. -->
     <slaveName>s0</slaveName>
     <name>mm_bridge_0.s0</name>
     <baseAddress>4280287232</baseAddress>
-    <span>262144</span>
+    <span>524288</span>
    </memoryBlock>
    <memoryBlock>
     <isBridge>false</isBridge>
@@ -49568,7 +49568,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>custom_leds_0</moduleName>
     <slaveName>avs_s0</slaveName>
     <name>custom_leds_0.avs_s0</name>
-    <baseAddress>4280287232</baseAddress>
+    <baseAddress>4280549376</baseAddress>
     <span>8</span>
    </memoryBlock>
    <memoryBlock>
@@ -78857,7 +78857,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="SYSINFO_ADDR_WIDTH">
    <type>int</type>
-   <value>18</value>
+   <value>19</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -78875,7 +78875,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="AUTO_ADDRESS_WIDTH">
    <type>int</type>
-   <value>18</value>
+   <value>19</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -78883,7 +78883,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="HDL_ADDR_WIDTH">
    <type>int</type>
-   <value>18</value>
+   <value>19</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>false</visible>
@@ -79093,7 +79093,7 @@ parameters are a RESULT of the module parameters. -->
    </parameter>
    <parameter name="addressSpan">
     <type>java.math.BigInteger</type>
-    <value>262144</value>
+    <value>524288</value>
     <derived>true</derived>
     <enabled>true</enabled>
     <visible>false</visible>
@@ -79422,7 +79422,7 @@ parameters are a RESULT of the module parameters. -->
    <port>
     <name>s0_address</name>
     <direction>Input</direction>
-    <width>18</width>
+    <width>19</width>
     <role>address</role>
    </port>
    <port>
@@ -79745,7 +79745,7 @@ parameters are a RESULT of the module parameters. -->
    <port>
     <name>m0_address</name>
     <direction>Output</direction>
-    <width>18</width>
+    <width>19</width>
     <role>address</role>
    </port>
    <port>
@@ -79793,7 +79793,7 @@ parameters are a RESULT of the module parameters. -->
     <moduleName>custom_leds_0</moduleName>
     <slaveName>avs_s0</slaveName>
     <name>custom_leds_0.avs_s0</name>
-    <baseAddress>0</baseAddress>
+    <baseAddress>262144</baseAddress>
     <span>8</span>
    </memoryBlock>
    <memoryBlock>
@@ -79819,7 +79819,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.CMacro.TIMESTAMP</name>
-   <value>1564941346</value>
+   <value>1565119985</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.compatible</name>
@@ -79839,7 +79839,7 @@ the requested settings for a module instance. -->
   </assignment>
   <assignment>
    <name>embeddedsw.dts.params.timestamp</name>
-   <value>1564941346</value>
+   <value>1565119985</value>
   </assignment>
   <assignment>
    <name>embeddedsw.dts.vendor</name>
@@ -79855,7 +79855,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="timestamp">
    <type>int</type>
-   <value>1564941346</value>
+   <value>1565119985</value>
    <derived>true</derived>
    <enabled>false</enabled>
    <visible>false</visible>
@@ -90607,7 +90607,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x0000</value>
+   <value>0x00040000</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -90811,7 +90811,7 @@ parameters are a RESULT of the module parameters. -->
   </parameter>
   <parameter name="baseAddress">
    <type>java.math.BigInteger</type>
-   <value>0x0000</value>
+   <value>0x00040000</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>

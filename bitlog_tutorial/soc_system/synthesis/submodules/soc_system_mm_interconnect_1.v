@@ -18,7 +18,7 @@ module soc_system_mm_interconnect_1 (
 		output wire        fpga_only_master_master_readdatavalid,                  //                                                 .readdatavalid
 		input  wire        fpga_only_master_master_write,                          //                                                 .write
 		input  wire [31:0] fpga_only_master_master_writedata,                      //                                                 .writedata
-		input  wire [17:0] mm_bridge_0_m0_address,                                 //                                   mm_bridge_0_m0.address
+		input  wire [18:0] mm_bridge_0_m0_address,                                 //                                   mm_bridge_0_m0.address
 		output wire        mm_bridge_0_m0_waitrequest,                             //                                                 .waitrequest
 		input  wire [0:0]  mm_bridge_0_m0_burstcount,                              //                                                 .burstcount
 		input  wire [3:0]  mm_bridge_0_m0_byteenable,                              //                                                 .byteenable
@@ -407,7 +407,7 @@ module soc_system_mm_interconnect_1 (
 	wire    [0:0] avalon_st_adapter_003_out_0_error;                                          // avalon_st_adapter_003:out_0_error -> sysid_qsys_control_slave_agent:rdata_fifo_sink_error
 
 	altera_merlin_master_translator #(
-		.AV_ADDRESS_W                (18),
+		.AV_ADDRESS_W                (19),
 		.AV_DATA_W                   (32),
 		.AV_BURSTCOUNT_W             (1),
 		.AV_BYTEENABLE_W             (4),
